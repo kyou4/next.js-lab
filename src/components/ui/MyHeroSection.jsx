@@ -19,14 +19,14 @@ export default function MyHero({ heroData }) {
         {/* Content */}
         <div className="flex-1">
           <h1 className="font-black text-4xl mb-2">{heroData.fullName}</h1>
-          <p className="text-lg text-muted-foreground mb-4">{heroData.shortDescription}</p>
-          <p className="text-base leading-relaxed">{heroData.longDescription}</p>
+          <p className="text-lg text-muted-foreground mb-4">
+            {heroData.shortDescription}
+          </p>
+          <p className="text-base leading-relaxed">
+            {heroData.longDescription}
+          </p>
         </div>
       </div>
-
-      <CardContent className="mt-6">
-        <Image src="/placeholder-hero-img1.jpg" alt="hero image" width={2000} height={1000} className="rounded-lg" />
-      </CardContent>
     </Card>
   );
 }
